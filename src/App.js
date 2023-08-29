@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Player from './componentes/player';
+import Rival from './componentes/Rival';
+
 
 function App() {
+ 
+  var prova = "papel";
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='botones-contenedor'>
+        <Player/>
+        
+      </div>
+     <Rival
+     imagen={prova}/>
     </div>
   );
 }
