@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-function Rival(props) {
+function Rival({imagen}) {
     return(
         <>
           <div>
             <img 
-            src={require(`../imagenes/${props.imagen}.png`)}
+            src={imagen}
             alt='imagen'/>
           </div>
         </>

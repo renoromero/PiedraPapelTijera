@@ -1,13 +1,14 @@
 import './App.css';
 import Player from './componentes/player';
 import Rival from './componentes/Rival';
+import papel from './imagenes/papel.png';
+import piedra from './imagenes/piedra.png';
+import tijera from './imagenes/tijera.png';
 
 
 function App() {
- 
-  var prova = "papel";
 
-
+var selectRival = [tijera];
   return (
     <div className="App">
       <div className='botones-contenedor'>
@@ -15,7 +16,7 @@ function App() {
         
       </div>
      <Rival
-     imagen={prova}/>
+     imagen={selectRival}/>
     </div>
   );
 }
